@@ -773,15 +773,16 @@ uint16_t bma4_write_config_file(struct bma4_dev *dev)
 		/* Disable config loading*/
 		rslt |= bma4_write_regs(BMA4_INIT_CTRL_ADDR, &config_load, 1, dev);
 		/* Write the config stream */
-		for (index = 0; index < BMA4_CONFIG_STREAM_SIZE; index += dev->read_write_len) {
+		for (index = 0; index < BMA4_CONFIG_STREAM_SIZE; index += dev->read_write_len)
+		{
 #ifdef __AVR__
-            for(uint8_t i = 0; i < dev->read_write_len; i++)
-                config_file[i] = pgm_read_byte(dev->config_file_ptr + index + i);
-            rslt |= stream_transfer_write(config_file, index, dev);
+			for (uint8_t i = 0; i < dev->read_write_len; i++)
+				config_file[i] = pgm_read_byte(dev->config_file_ptr + index + i);
+			rslt |= stream_transfer_write(config_file, index, dev);
 #else
-            rslt |= stream_transfer_write((dev->config_file_ptr + index), index, dev);
+			rslt |= stream_transfer_write((dev->config_file_ptr + index), index, dev);
 #endif  
-        }
+		}
 
 		/* Enable config loading and FIFO mode */
 		config_load = 0x01;
