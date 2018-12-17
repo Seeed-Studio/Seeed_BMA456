@@ -97,4 +97,37 @@ typedef struct {
 	double range;
 } rpi_bma456_t;
 
+void* rpi_bma456_alloc(void);
+int rpi_bma456_free(rpi_bma456_t* dev);
+
+extern int rpi_bma456_init(
+	rpi_bma456_t* dev,
+	const char* i2c_dev,
+	int bma_addr,
+	BMA456_RANGE range,
+	BMA456_ODR odr,
+	BMA456_BW bw,
+	BMA456_PERF_MODE mode
+);
+
+extern int rpi_bma456_enable(
+	rpi_bma456_t* dev,
+	BMA456_PLATFORM_CONF plat,
+	BMA456_PATTERN_t pattern,
+	int cmd
+);
+
+extern int rpi_bma456_get_accel(
+	rpi_bma456_t* dev,
+	double* x, double* y, double* z
+);
+
+extern double rpi_bma456_get_temperature(
+	rpi_bma456_t* dev
+);
+
+extern uint32_t rpi_bma456_get_counter(
+	rpi_bma456_t* dev
+);
+
 #endif//__RPI_BMA456_H__

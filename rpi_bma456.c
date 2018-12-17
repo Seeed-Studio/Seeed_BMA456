@@ -40,7 +40,7 @@
 static int rpi_i2c_fd = -1;
 
 static int rpi_i2c_init(const char* dev_path) {
-	int fd, rt;
+	int fd;
 
 	if ((fd = rpi_i2c_fd) >= 0) {
 		return fd;
@@ -114,6 +114,15 @@ static uint16_t rpi_i2c_read(uint8_t dev_addr, uint8_t reg_addr, uint8_t *data, 
 static void rpi_delay_ms(uint32_t millis) {
 	usleep(millis * 1000UL);
 	return;
+}
+
+void* rpi_bma456_alloc(void) {
+	return malloc(sizeof(rpi_bma456_t));
+}
+
+int rpi_bma456_free(rpi_bma456_t* dev) {
+	free(dev);
+	return 0;
 }
 
 int rpi_bma456_init(
@@ -229,27 +238,6 @@ uint32_t rpi_bma456_get_counter(
 	return step;
 }
 
-int main(int argc, const char* argv[]) {
-	rpi_bma456_t rpi_bma[1];
-	uint32_t step;
-	double x, y, z;
-
-	rpi_bma456_init(rpi_bma,
-			"/dev/i2c-1",
-			BMA456_I2C_ADDR,
-			RANGE_4G,
-			ODR_1600_HZ,
-			NORMAL_AVG4,
-			CONTINUOUS);
-	rpi_bma456_enable(rpi_bma, WRIST_CONFIG, 0, BMA4_ENABLE);
-
-	for (;;) {
-		step = rpi_bma456_get_counter(rpi_bma);
-		printf("Steps:       %5u\n",    step);
-		printf("Temperature: %5.2lf\n", rpi_bma456_get_temperature(rpi_bma));
-		rpi_bma456_get_accel(rpi_bma, &x, &y, &z);
-		printf(" X = %lf Y = %lf Z = %lf\n", x, y, z);
-		rpi_bma->bma.delay(1000);
-	}
-	return 0;
-}
+#ifdef _HAS_MAIN
+#include "main.c"
+#endif

@@ -1,0 +1,10 @@
+package: libbma456
+Version: 1.0.0-1
+Section: base
+Priority: optional
+Architecture: armhf
+Depends:
+Maintainer:  Peter Yang (turmary@126.com)
+Homepage: https://github.com/Seeed-Studio/Seeed_BMA456/tree/rpi
+Description: Raspberry Pi BMA456 Library
+ BMA456 Step Counter Control Library for the Raspberry Pi.  
