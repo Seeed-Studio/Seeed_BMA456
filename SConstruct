@@ -74,6 +74,8 @@ if env['TOOLCHAIN'] != '':
     env['CC'] = env['TOOLCHAIN'] + '-gcc'
     env['AR'] = env['TOOLCHAIN'] + '-ar'
 
+env['ARCH'] = os.popen("dpkg --print-architecture").readline().strip()
+
 Export(['clean_envs'])
 # SConscript('SConscript');
 
@@ -110,7 +112,7 @@ test = tools_env.Program('bma456_test', objs + tools_env['LIBS'])
 Default([test, bma456_lib])
 
 package_version = "1.0.0-1"
-package_name = 'libbma456_%s' % package_version
+package_name = 'libbma456_' + package_version + '_' + env['ARCH']
 
 debian_files = [
     'DEBIAN/control',

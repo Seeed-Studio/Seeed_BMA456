@@ -2,7 +2,7 @@ package: libbma456
 Version: 1.0.0-1
 Section: base
 Priority: optional
-Architecture: armhf
+Architecture: arm64
 Depends:
 Maintainer:  Peter Yang (turmary@126.com)
 Homepage: https://github.com/Seeed-Studio/Seeed_BMA456/tree/rpi

@@ -5,6 +5,7 @@ This is the Raspberry Pi library for Seeed's BMA456 based products.
 ## Build:
 
 - Install Scons (on raspbian, `apt-get install scons`).
+- Set proper architecture (armhf/arm64 etc) in DEBIAN/control
 - Type 'scons' from inside the source directory to generate test program.
 - Type 'scons deb' to generate debian package
 
