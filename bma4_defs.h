@@ -1,86 +1,86 @@
 /*
-*
+
 ****************************************************************************
-* Copyright (C) 2017 - 2018 Bosch Sensortec GmbH
-*
-* File : bma4_defs.h
-*
-* Date: 12 Oct 2017
-*
-* Revision: 2.1.9 $
-*
-* Usage: Sensor Driver for BMA4 family of sensors
-*
+    Copyright (C) 2017 - 2018 Bosch Sensortec GmbH
+
+    File : bma4_defs.h
+
+    Date: 12 Oct 2017
+
+    Revision: 2.1.9 $
+
+    Usage: Sensor Driver for BMA4 family of sensors
+
 ****************************************************************************
-*
-* Disclaimer
-*
-* Common:
-* Bosch Sensortec products are developed for the consumer goods industry.
-* They may only be used within the parameters of the respective valid
-* product data sheet.  Bosch Sensortec products are provided with the
-* express understanding that there is no warranty of fitness for a
-* particular purpose.They are not fit for use in life-sustaining,
-* safety or security sensitive systems or any system or device
-* that may lead to bodily harm or property damage if the system
-* or device malfunctions. In addition,Bosch Sensortec products are
-* not fit for use in products which interact with motor vehicle systems.
-* The resale and or use of products are at the purchasers own risk and
-* his own responsibility. The examination of fitness for the intended use
-* is the sole responsibility of the Purchaser.
-*
-* The purchaser shall indemnify Bosch Sensortec from all third party
-* claims, including any claims for incidental, or consequential damages,
-* arising from any product use not covered by the parameters of
-* the respective valid product data sheet or not approved by
-* Bosch Sensortec and reimburse Bosch Sensortec for all costs in
-* connection with such claims.
-*
-* The purchaser must monitor the market for the purchased products,
-* particularly with regard to product safety and inform Bosch Sensortec
-* without delay of all security relevant incidents.
-*
-* Engineering Samples are marked with an asterisk (*) or (e).
-* Samples may vary from the valid technical specifications of the product
-* series. They are therefore not intended or fit for resale to third
-* parties or for use in end products. Their sole purpose is internal
-* client testing. The testing of an engineering sample may in no way
-* replace the testing of a product series. Bosch Sensortec assumes
-* no liability for the use of engineering samples.
-* By accepting the engineering samples, the Purchaser agrees to indemnify
-* Bosch Sensortec from all claims arising from the use of engineering
-* samples.
-*
-* Special:
-* This software module (hereinafter called "Software") and any information
-* on application-sheets (hereinafter called "Information") is provided
-* free of charge for the sole purpose to support your application work.
-* The Software and Information is subject to the following
-* terms and conditions:
-*
-* The Software is specifically designed for the exclusive use for
-* Bosch Sensortec products by personnel who have special experience
-* and training. Do not use this Software if you do not have the
-* proper experience or training.
-*
-* This Software package is provided `` as is `` and without any expressed
-* or implied warranties,including without limitation, the implied warranties
-* of merchantability and fitness for a particular purpose.
-*
-* Bosch Sensortec and their representatives and agents deny any liability
-* for the functional impairment
-* of this Software in terms of fitness, performance and safety.
-* Bosch Sensortec and their representatives and agents shall not be liable
-* for any direct or indirect damages or injury, except as
-* otherwise stipulated in mandatory applicable law.
-*
-* The Information provided is believed to be accurate and reliable.
-* Bosch Sensortec assumes no responsibility for the consequences of use
-* of such Information nor for any infringement of patents or
-* other rights of third parties which may result from its use.
-* No license is granted by implication or otherwise under any patent or
-* patent rights of Bosch. Specifications mentioned in the Information are
-* subject to change without notice.
+
+    Disclaimer
+
+    Common:
+    Bosch Sensortec products are developed for the consumer goods industry.
+    They may only be used within the parameters of the respective valid
+    product data sheet.  Bosch Sensortec products are provided with the
+    express understanding that there is no warranty of fitness for a
+    particular purpose.They are not fit for use in life-sustaining,
+    safety or security sensitive systems or any system or device
+    that may lead to bodily harm or property damage if the system
+    or device malfunctions. In addition,Bosch Sensortec products are
+    not fit for use in products which interact with motor vehicle systems.
+    The resale and or use of products are at the purchasers own risk and
+    his own responsibility. The examination of fitness for the intended use
+    is the sole responsibility of the Purchaser.
+
+    The purchaser shall indemnify Bosch Sensortec from all third party
+    claims, including any claims for incidental, or consequential damages,
+    arising from any product use not covered by the parameters of
+    the respective valid product data sheet or not approved by
+    Bosch Sensortec and reimburse Bosch Sensortec for all costs in
+    connection with such claims.
+
+    The purchaser must monitor the market for the purchased products,
+    particularly with regard to product safety and inform Bosch Sensortec
+    without delay of all security relevant incidents.
+
+    Engineering Samples are marked with an asterisk (*) or (e).
+    Samples may vary from the valid technical specifications of the product
+    series. They are therefore not intended or fit for resale to third
+    parties or for use in end products. Their sole purpose is internal
+    client testing. The testing of an engineering sample may in no way
+    replace the testing of a product series. Bosch Sensortec assumes
+    no liability for the use of engineering samples.
+    By accepting the engineering samples, the Purchaser agrees to indemnify
+    Bosch Sensortec from all claims arising from the use of engineering
+    samples.
+
+    Special:
+    This software module (hereinafter called "Software") and any information
+    on application-sheets (hereinafter called "Information") is provided
+    free of charge for the sole purpose to support your application work.
+    The Software and Information is subject to the following
+    terms and conditions:
+
+    The Software is specifically designed for the exclusive use for
+    Bosch Sensortec products by personnel who have special experience
+    and training. Do not use this Software if you do not have the
+    proper experience or training.
+
+    This Software package is provided `` as is `` and without any expressed
+    or implied warranties,including without limitation, the implied warranties
+    of merchantability and fitness for a particular purpose.
+
+    Bosch Sensortec and their representatives and agents deny any liability
+    for the functional impairment
+    of this Software in terms of fitness, performance and safety.
+    Bosch Sensortec and their representatives and agents shall not be liable
+    for any direct or indirect damages or injury, except as
+    otherwise stipulated in mandatory applicable law.
+
+    The Information provided is believed to be accurate and reliable.
+    Bosch Sensortec assumes no responsibility for the consequences of use
+    of such Information nor for any infringement of patents or
+    other rights of third parties which may result from its use.
+    No license is granted by implication or otherwise under any patent or
+    patent rights of Bosch. Specifications mentioned in the Information are
+    subject to change without notice.
 **************************************************************************/
 /*! \file bma4_defs.h
     \brief Sensor Driver for BMA4 family of sensors */
@@ -89,60 +89,60 @@
 /*********************************************************************/
 /**\ header files */
 #ifdef __KERNEL__
-#include <linux/types.h>
+    #include <linux/types.h>
 #else
-#include <stdint.h>
-#include <stddef.h>
-#include <math.h>
+    #include <stdint.h>
+    #include <stddef.h>
+    #include <math.h>
 #endif
 
 /*********************************************************************/
 /* macro definitions */
 
 /*
-#if (LONG_MAX) > 0x7fffffff
-#define __have_long64	1
-#elif (LONG_MAX) == 0x7fffffff
-#define __have_long32	1
-#endif
+    #if (LONG_MAX) > 0x7fffffff
+    #define __have_long64	1
+    #elif (LONG_MAX) == 0x7fffffff
+    #define __have_long32	1
+    #endif
 */
 
 #if !defined(UINT8_C)
-#define INT8_C(x)       x
-#if (INT_MAX) > 0x7f
-#define UINT8_C(x)      x
-#else
-#define UINT8_C(x)      x##U
-#endif
+    #define INT8_C(x)       x
+    #if (INT_MAX) > 0x7f
+        #define UINT8_C(x)      x
+    #else
+        #define UINT8_C(x)      x##U
+    #endif
 #endif
 
 #if !defined(UINT16_C)
-#define INT16_C(x)      x
-#if (INT_MAX) > 0x7fff
-#define UINT16_C(x)     x
-#else
-#define UINT16_C(x)     x##U
-#endif
+    #define INT16_C(x)      x
+    #if (INT_MAX) > 0x7fff
+        #define UINT16_C(x)     x
+    #else
+        #define UINT16_C(x)     x##U
+    #endif
 #endif
 
 #if !defined(INT32_C) && !defined(UINT32_C)
-#if __have_long32
-#define INT32_C(x)      x##L
-#define UINT32_C(x)     x##UL
-#else
-#define INT32_C(x)      x
-#define UINT32_C(x)     x##U
-#endif
+    #if __have_long32
+        #define INT32_C(x)      x##L
+        #define UINT32_C(x)     x##UL
+    #else
+        #define INT32_C(x)      x
+        #define UINT32_C(x)     x##U
+    #endif
 #endif
 
 #if !defined(INT64_C) && !defined(UINT64_C)
-#if __have_long64
-#define INT64_C(x)      x##L
-#define UINT64_C(x)     x##UL
-#else
-#define INT64_C(x)      x##LL
-#define UINT64_C(x)     x##ULL
-#endif
+    #if __have_long64
+        #define INT64_C(x)      x##L
+        #define UINT64_C(x)     x##UL
+    #else
+        #define INT64_C(x)      x##LL
+        #define UINT64_C(x)     x##ULL
+    #endif
 #endif
 
 /**\name CHIP ID ADDRESS*/
@@ -248,7 +248,7 @@
 #define	BMA4_INTERNAL_STAT			UINT8_C(0x2A)
 
 /*!
- * @brief Block size for config write */
+    @brief Block size for config write */
 #define BMA4_BLOCK_SIZE			UINT8_C(32)
 
 /**\name I2C slave address */
@@ -384,15 +384,15 @@
 
 /**\name BOOLEAN TYPES*/
 #ifndef TRUE
-#define TRUE	UINT8_C(0x01)
+    #define TRUE	UINT8_C(0x01)
 #endif
 
 #ifndef FALSE
-#define FALSE	UINT8_C(0x00)
+    #define FALSE	UINT8_C(0x00)
 #endif
 
 #ifndef NULL
-#define	NULL	UINT8_C(0x00)
+    #define	NULL	UINT8_C(0x00)
 #endif
 
 /**\name	ERROR STATUS POSITION AND MASK*/
@@ -665,15 +665,15 @@
 #define	BMA4_AUX_READ_LEN_3		3
 
 #ifndef ABS
-#define	ABS(a)		((a) > 0 ? (a) : -(a)) /*!< Absolute value */
+    #define	ABS(a)		((a) > 0 ? (a) : -(a)) /*!< Absolute value */
 #endif
 
 /**\name	BIT SLICE GET AND SET FUNCTIONS */
 #define	BMA4_GET_BITSLICE(regvar, bitname)\
-		((regvar & bitname##_MSK) >> bitname##_POS)
+    ((regvar & bitname##_MSK) >> bitname##_POS)
 #define	BMA4_SET_BITSLICE(regvar, bitname, val)\
-		((regvar & ~bitname##_MSK) | \
-		((val<<bitname##_POS)&bitname##_MSK))
+    ((regvar & ~bitname##_MSK) | \
+     ((val<<bitname##_POS)&bitname##_MSK))
 #define	BMA4_GET_DIFF(x, y) ((x) - (y))
 
 #define BMA4_GET_LSB(var)	(uint8_t)(var & BMA4_SET_LOW_BYTE)
@@ -682,17 +682,17 @@
 #define BMA4_SET_BIT_VAL_0(reg_data, bitname) (reg_data & ~(bitname##_MSK))
 
 #define BMA4_SET_BITS_POS_0(reg_data, bitname, data) \
-				((reg_data & ~(bitname##_MSK)) | \
-				(data & bitname##_MSK))
+    ((reg_data & ~(bitname##_MSK)) | \
+     (data & bitname##_MSK))
 
 #define BMA4_GET_BITS_POS_0(reg_data, bitname)  (reg_data & (bitname##_MSK))
 
 /**\name	TYPEDEF DEFINITIONS */
 /*!
- * @brief Bus communication function pointer which should be mapped to
- * the platform specific read and write functions of the user
- */
-typedef uint16_t (*bma4_com_fptr_t)(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data, uint16_t len);
+    @brief Bus communication function pointer which should be mapped to
+    the platform specific read and write functions of the user
+*/
+typedef uint16_t (*bma4_com_fptr_t)(uint8_t dev_addr, uint8_t reg_addr, uint8_t* read_data, uint16_t len);
 
 /*!	delay function pointer */
 typedef void (*bma4_delay_fptr_t)(uint32_t);
@@ -703,257 +703,257 @@ typedef void (*bma4_delay_fptr_t)(uint32_t);
 
 /*!  @name Enum to define BMA4 variants */
 enum  bma4_variant {
-	BMA42X_VARIANT = 1,
-	BMA45X_VARIANT
+    BMA42X_VARIANT = 1,
+    BMA45X_VARIANT
 };
 
 /**\name	STRUCTURE DEFINITIONS*/
 
 /*!
- *  @brief
- *  This structure holds asic info. for feature configuration.
- */
+    @brief
+    This structure holds asic info. for feature configuration.
+*/
 struct bma4_asic_data {
-	/* Feature config start addr (0-3 bits)*/
-	uint8_t asic_lsb;
-	/* Feature config start addr (4-11 bits)*/
-	uint8_t asic_msb;
+    /* Feature config start addr (0-3 bits)*/
+    uint8_t asic_lsb;
+    /* Feature config start addr (4-11 bits)*/
+    uint8_t asic_msb;
 };
 
 /*!
- * @brief Auxiliary configuration structure for user settings
- */
+    @brief Auxiliary configuration structure for user settings
+*/
 struct bma4_aux_config {
-	/*! Device address of auxiliary sensor */
-	uint8_t aux_dev_addr;
-	/*! To enable manual or auto mode */
-	uint8_t manual_enable;
-	/*! No of bytes to be read at a time */
-	uint8_t burst_read_length;
-	/*! Variable to set the auxiliary interface */
-	uint8_t if_mode;
+    /*! Device address of auxiliary sensor */
+    uint8_t aux_dev_addr;
+    /*! To enable manual or auto mode */
+    uint8_t manual_enable;
+    /*! No of bytes to be read at a time */
+    uint8_t burst_read_length;
+    /*! Variable to set the auxiliary interface */
+    uint8_t if_mode;
 };
 
 /*!
- *	@brief
- *	This structure holds all relevant information about BMA4
- */
+ 	@brief
+ 	This structure holds all relevant information about BMA4
+*/
 struct bma4_dev {
-	/*! Chip id of BMA4 */
-	uint8_t chip_id;
-	/*! Chip id of auxiliary sensor */
-	uint8_t aux_chip_id;
-	/*! Device address of BMA4 */
-	uint8_t dev_addr;
-	/*! Interface detail */
-	uint8_t interface;
-	/*! Auxiliary sensor information */
-	uint8_t aux_sensor;
-	/*! Decide SPI or I2C read mechanism */
-	uint8_t dummy_byte;
-	/*! Resolution for FOC */
-	uint8_t resolution;
-	/*! Define the BMA4 variant BMA42X or BMA45X */
-	enum bma4_variant variant;
-/*	! Used to check mag manual/auto mode status
-	int8_t mag_manual_enable;*/
-	/*! FIFO related configurations */
-	struct bma4_fifo_frame *fifo;
-	/*! Config stream data buffer address will be assigned*/
-	const uint8_t *config_file_ptr;
-	/*! Max read/write length (maximum supported length is 32).
-	    To be set by the user */
-	uint8_t read_write_len;
-	/*! Feature len */
-	uint8_t feature_len;
-	/*! Contains asic information */
-	struct bma4_asic_data asic_data;
-	/*! Contains aux configuration settings */
-	struct bma4_aux_config aux_config;
-	/*! Bus read function pointer */
-	bma4_com_fptr_t bus_read;
-	/*! Bus write function pointer */
-	bma4_com_fptr_t bus_write;
-	/*! delay(in ms) function pointer */
-	bma4_delay_fptr_t delay;
+    /*! Chip id of BMA4 */
+    uint8_t chip_id;
+    /*! Chip id of auxiliary sensor */
+    uint8_t aux_chip_id;
+    /*! Device address of BMA4 */
+    uint8_t dev_addr;
+    /*! Interface detail */
+    uint8_t interface;
+    /*! Auxiliary sensor information */
+    uint8_t aux_sensor;
+    /*! Decide SPI or I2C read mechanism */
+    uint8_t dummy_byte;
+    /*! Resolution for FOC */
+    uint8_t resolution;
+    /*! Define the BMA4 variant BMA42X or BMA45X */
+    enum bma4_variant variant;
+    /*	! Used to check mag manual/auto mode status
+    	int8_t mag_manual_enable;*/
+    /*! FIFO related configurations */
+    struct bma4_fifo_frame* fifo;
+    /*! Config stream data buffer address will be assigned*/
+    const uint8_t* config_file_ptr;
+    /*! Max read/write length (maximum supported length is 32).
+        To be set by the user */
+    uint8_t read_write_len;
+    /*! Feature len */
+    uint8_t feature_len;
+    /*! Contains asic information */
+    struct bma4_asic_data asic_data;
+    /*! Contains aux configuration settings */
+    struct bma4_aux_config aux_config;
+    /*! Bus read function pointer */
+    bma4_com_fptr_t bus_read;
+    /*! Bus write function pointer */
+    bma4_com_fptr_t bus_write;
+    /*! delay(in ms) function pointer */
+    bma4_delay_fptr_t delay;
 };
 
 /*!
- *	@brief This structure holds the information for usage of
- *	FIFO by the user.
- */
+ 	@brief This structure holds the information for usage of
+ 	FIFO by the user.
+*/
 struct bma4_fifo_frame {
-	/*! Data buffer of user defined length is to be mapped here */
-	uint8_t *data;
-	/*! Number of bytes of FIFO to be read as specified by the user */
-	uint16_t length;
-	/*! Enabling of the FIFO header to stream in header mode */
-	uint8_t fifo_header_enable;
-	/*! Streaming of the Accelerometer, Auxiliary
-	 *  sensor data or both in FIFO */
-	uint8_t fifo_data_enable;
-	/*! Will be equal to length when no more frames are there to parse */
-	uint16_t accel_byte_start_idx;
-	/*! Will be equal to length when no more frames are there to parse */
-	uint16_t mag_byte_start_idx;
-	/*! Will be equal to length when no more frames are there to parse */
-	uint16_t sc_frame_byte_start_idx;
-	/*! Value of FIFO sensor time time */
-	uint32_t sensor_time;
-	/*! Value of Skipped frame counts */
-	uint8_t skipped_frame_count;
-	/*! Value of accel dropped frame count */
-	uint8_t accel_dropped_frame_count;
-	/*! Value of mag dropped frame count */
-	uint8_t mag_dropped_frame_count;
+    /*! Data buffer of user defined length is to be mapped here */
+    uint8_t* data;
+    /*! Number of bytes of FIFO to be read as specified by the user */
+    uint16_t length;
+    /*! Enabling of the FIFO header to stream in header mode */
+    uint8_t fifo_header_enable;
+    /*! Streaming of the Accelerometer, Auxiliary
+        sensor data or both in FIFO */
+    uint8_t fifo_data_enable;
+    /*! Will be equal to length when no more frames are there to parse */
+    uint16_t accel_byte_start_idx;
+    /*! Will be equal to length when no more frames are there to parse */
+    uint16_t mag_byte_start_idx;
+    /*! Will be equal to length when no more frames are there to parse */
+    uint16_t sc_frame_byte_start_idx;
+    /*! Value of FIFO sensor time time */
+    uint32_t sensor_time;
+    /*! Value of Skipped frame counts */
+    uint8_t skipped_frame_count;
+    /*! Value of accel dropped frame count */
+    uint8_t accel_dropped_frame_count;
+    /*! Value of mag dropped frame count */
+    uint8_t mag_dropped_frame_count;
 };
 
 /*!
- *	@brief Error Status structure
- */
+ 	@brief Error Status structure
+*/
 struct bma4_err_reg {
-	/*! Indicates fatal error */
-	uint8_t fatal_err;
-	/*! Indicates command error */
-	uint8_t cmd_err;
-	/*! Indicates error code */
-	uint8_t err_code;
-	/*! Indicates fifo error */
-	uint8_t fifo_err;
-	/*! Indicates mag error */
-	uint8_t aux_err;
+    /*! Indicates fatal error */
+    uint8_t fatal_err;
+    /*! Indicates command error */
+    uint8_t cmd_err;
+    /*! Indicates error code */
+    uint8_t err_code;
+    /*! Indicates fifo error */
+    uint8_t fifo_err;
+    /*! Indicates mag error */
+    uint8_t aux_err;
 };
 
 /*!
- * @brief Asic Status structure
- */
+    @brief Asic Status structure
+*/
 struct bma4_asic_status {
-	/*! Asic is in sleep/halt state */
-	uint8_t sleep;
-	/*! Dedicated interrupt is set again before previous interrupt
-	was acknowledged */
-	uint8_t irq_ovrn;
-	/*! Watchcell event detected (asic stopped) */
-	uint8_t wc_event;
-	/*! Stream transfer has started and transactions are ongoing */
-	uint8_t stream_transfer_active;
+    /*! Asic is in sleep/halt state */
+    uint8_t sleep;
+    /*! Dedicated interrupt is set again before previous interrupt
+        was acknowledged */
+    uint8_t irq_ovrn;
+    /*! Watchcell event detected (asic stopped) */
+    uint8_t wc_event;
+    /*! Stream transfer has started and transactions are ongoing */
+    uint8_t stream_transfer_active;
 };
 
 /*!
- * @brief Interrupt Pin Configuration structure
- */
+    @brief Interrupt Pin Configuration structure
+*/
 struct	bma4_int_pin_config {
-	/*! Trigger condition of interrupt pin */
-	uint8_t edge_ctrl;
-	/*! Level of interrupt pin */
-	uint8_t lvl;
-	/*! Behaviour of interrupt pin to open drain */
-	uint8_t od;
-	/*! Output enable for interrupt pin */
-	uint8_t output_en;
-	/*! Input enable for interrupt pin */
-	uint8_t input_en;
+    /*! Trigger condition of interrupt pin */
+    uint8_t edge_ctrl;
+    /*! Level of interrupt pin */
+    uint8_t lvl;
+    /*! Behaviour of interrupt pin to open drain */
+    uint8_t od;
+    /*! Output enable for interrupt pin */
+    uint8_t output_en;
+    /*! Input enable for interrupt pin */
+    uint8_t input_en;
 };
 
 /*!
-* @brief Accelerometer configuration structure */
+    @brief Accelerometer configuration structure */
 struct bma4_accel_config {
-	/*! Output data rate in Hz */
-	uint8_t odr;
-	/*! Bandwidth parameter, determines filter configuration */
-	uint8_t bandwidth;
-	/*! Filter performance mode */
-	uint8_t perf_mode;
-	/*! G-range */
-	uint8_t range;
+    /*! Output data rate in Hz */
+    uint8_t odr;
+    /*! Bandwidth parameter, determines filter configuration */
+    uint8_t bandwidth;
+    /*! Filter performance mode */
+    uint8_t perf_mode;
+    /*! G-range */
+    uint8_t range;
 };
 
 /*!
- * @brief Auxiliary magnetometer configuration structure
- */
+    @brief Auxiliary magnetometer configuration structure
+*/
 struct bma4_aux_mag_config {
-	/*! Poll rate for the sensor attached to the Magnetometer interface */
-	uint8_t odr;
-	/*! Trigger-readout offset in units of 2.5 ms.
-	If set to zero, the offset is maximum, i.e. after readout a trigger
-	is issued immediately */
-	uint8_t offset;
+    /*! Poll rate for the sensor attached to the Magnetometer interface */
+    uint8_t odr;
+    /*! Trigger-readout offset in units of 2.5 ms.
+        If set to zero, the offset is maximum, i.e. after readout a trigger
+        is issued immediately */
+    uint8_t offset;
 };
 
 /*!
- * @brief ASIC Config structure
- */
+    @brief ASIC Config structure
+*/
 struct bma4_asic_config {
-	/*! Enable/Disable ASIC Wake Up */
-	uint8_t asic_en;
-	/*! Configure stream_transfer/FIFO mode */
-	uint8_t fifo_mode_en;
-	/*! Mapping of instance RAM1 */
-	uint8_t mem_conf_ram1;
-	/*! Mapping of instance RAM2 */
-	uint8_t mem_conf_ram2;
-	/*! Mapping of instance RAM3 */
-	uint8_t mem_conf_ram3;
+    /*! Enable/Disable ASIC Wake Up */
+    uint8_t asic_en;
+    /*! Configure stream_transfer/FIFO mode */
+    uint8_t fifo_mode_en;
+    /*! Mapping of instance RAM1 */
+    uint8_t mem_conf_ram1;
+    /*! Mapping of instance RAM2 */
+    uint8_t mem_conf_ram2;
+    /*! Mapping of instance RAM3 */
+    uint8_t mem_conf_ram3;
 };
 /*!
- * @brief bmm150 or akm09916
- *	magnetometer values structure
- */
+    @brief bmm150 or akm09916
+ 	magnetometer values structure
+*/
 struct bma4_mag {
-	/*! BMM150 and AKM09916 X raw data */
-	int32_t x;
-	/*! BMM150 and AKM09916 Y raw data */
-	int32_t y;
-	/*! BMM150 and AKM09916 Z raw data */
-	int32_t z;
+    /*! BMM150 and AKM09916 X raw data */
+    int32_t x;
+    /*! BMM150 and AKM09916 Y raw data */
+    int32_t y;
+    /*! BMM150 and AKM09916 Z raw data */
+    int32_t z;
 };
 
 /*!
- * @brief bmm150 xyz data structure
- */
+    @brief bmm150 xyz data structure
+*/
 struct bma4_mag_xyzr {
-	/*! BMM150 X raw data */
-	int16_t x;
-	/*! BMM150 Y raw data */
-	int16_t y;
-	/*! BMM150 Z raw data */
-	int16_t z;
-	/*! BMM150 R raw data */
-	uint16_t r;
+    /*! BMM150 X raw data */
+    int16_t x;
+    /*! BMM150 Y raw data */
+    int16_t y;
+    /*! BMM150 Z raw data */
+    int16_t z;
+    /*! BMM150 R raw data */
+    uint16_t r;
 };
 
 /*!
- * @brief Accel xyz data structure
- */
+    @brief Accel xyz data structure
+*/
 struct bma4_accel {
-	/*! Accel X data */
-	int16_t x;
-	/*! Accel Y data */
-	int16_t y;
-	/*! Accel Z data */
-	int16_t z;
+    /*! Accel X data */
+    int16_t x;
+    /*! Accel Y data */
+    int16_t y;
+    /*! Accel Z data */
+    int16_t z;
 };
 
 /*!
- * @brief FIFO mag data structure
- */
+    @brief FIFO mag data structure
+*/
 struct bma4_mag_fifo_data {
-	/*! The value of mag x LSB data */
-	uint8_t mag_x_lsb;
-	/*! The value of mag x MSB data */
-	uint8_t mag_x_msb;
-	/*! The value of mag y LSB data */
-	uint8_t mag_y_lsb;
-	/*! The value of mag y MSB data */
-	uint8_t mag_y_msb;
-	/*! The value of mag z LSB data */
-	uint8_t mag_z_lsb;
-	/*! The value of mag z MSB data */
-	uint8_t mag_z_msb;
-	/*! The value of mag r for BMM150 Y2 for YAMAHA LSB data */
-	uint8_t mag_r_y2_lsb;
-	/*! The value of mag r for BMM150 Y2 for YAMAHA MSB data */
-	uint8_t mag_r_y2_msb;
+    /*! The value of mag x LSB data */
+    uint8_t mag_x_lsb;
+    /*! The value of mag x MSB data */
+    uint8_t mag_x_msb;
+    /*! The value of mag y LSB data */
+    uint8_t mag_y_lsb;
+    /*! The value of mag y MSB data */
+    uint8_t mag_y_msb;
+    /*! The value of mag z LSB data */
+    uint8_t mag_z_lsb;
+    /*! The value of mag z MSB data */
+    uint8_t mag_z_msb;
+    /*! The value of mag r for BMM150 Y2 for YAMAHA LSB data */
+    uint8_t mag_r_y2_lsb;
+    /*! The value of mag r for BMM150 Y2 for YAMAHA MSB data */
+    uint8_t mag_r_y2_msb;
 };
 
 #endif
