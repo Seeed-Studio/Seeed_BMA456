@@ -1,4 +1,4 @@
-# Seeed BMA456 Library
+# Seeed BMA456 Library  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_BMA456.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_BMA456)
 
 This is the Arduino library for Seeed's BMA456 based products.
 
